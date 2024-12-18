@@ -1,0 +1,27 @@
+# Windows sistemi dosyaları
+*.log
+*.bak
+*.tmp
+*.swp
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Python ve paket yöneticisi dosyaları
+__pycache__/
+.tox/
+.coverage
+
+# Node.js ve npm dosyaları
+node_modules/
+package-lock.json
+npm-debug.log
+
+# .NET ve NuGet dosyaları
+.nuget/
+bin/
+obj/
+
+# Diğer sistem dosyaları
+Thumbs.db
+Desktop.ini
