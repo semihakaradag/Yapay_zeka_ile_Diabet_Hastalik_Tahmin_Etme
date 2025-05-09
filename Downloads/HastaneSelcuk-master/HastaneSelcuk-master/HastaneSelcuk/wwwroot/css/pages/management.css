@@ -1,0 +1,106 @@
+/* Sayfa arka planı */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f3f4f6;
+}
+
+/* Başlık görseli */
+.management-banner {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.management-banner img {
+    width: 100%;
+    max-width: 1000px; /* ✅ Aynı değeri kart bölgesine de veriyoruz */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Kart bölgesi */
+.management-cards {
+    width: 100%;
+    max-width: 1000px; /* ✅ Banner ile tam eşit */
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px 20px 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Kart Sıralama */
+.card-container {
+    width: 100%;
+}
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+/* Kart Yapısı */
+.card {
+    background-color: #fff;
+    width: 190px;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #111;
+}
+.card p {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 12px; /* Daha net ayrım için artırıldı */
+}
+
+.btn-akademik {
+    background-color: #00a3e0;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 10px; /* 🔼 Yükseklik artırıldı */
+    font-size: 11px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: auto;
+    width: 80%;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.2s, transform 0.1s ease;
+    cursor: pointer;
+}
+/* Hover efekti */
+.btn-akademik:hover {
+    background-color: #007bb8;
+}
+
+/* Tıklama efekti */
+.btn-akademik:active {
+    transform: scale(0.97);
+}

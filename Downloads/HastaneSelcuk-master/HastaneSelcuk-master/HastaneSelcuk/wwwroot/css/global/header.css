@@ -1,0 +1,95 @@
+﻿/* HEADER İÇİN GENEL */
+body {
+    padding-top: 0px;
+    transition: padding-top 0.3s ease;
+}
+
+    body.scrolled {
+        padding-top: 90px; /* scroll sonrası içerik kaymasın */
+    }
+
+/* HEADER BAŞTA ŞEFFAF */
+.main-header.transparent-navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-header.scrolled {
+    background-color: #fff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ÜST MENÜ */
+.top-menu {
+    color: white;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    font-size: 0.85rem;
+    z-index: 1001;
+}
+    /* Üst Menüdeki Linkler Mavi Görünsün */
+    .top-menu a {
+        color: #3cb4e7 !important;
+        font-weight: 600;
+        font-size: 0.90rem;
+        text-decoration: none;
+        transition: color 0.3s;
+    }   
+
+        /* Hover olunca da aynı renk kalsın (ya da koyulaşabilir) */
+        .top-menu a:hover {
+            color: #3cb4e7 !important;
+            text-decoration: underline;
+        }
+    /* EN Buton Yazı Boyutu Büyüsün */
+    .top-menu .btn {
+        font-size: 0.9rem; /* Orijinali 0.85 - artırıldı */
+        background-color: #3cb4e7 !important; /* Aynı mavi */
+        border: none;
+    }
+
+    /* Arama İkonu Aynı Mavi Renkte ve Sedgwick Boyutunda Olsun */
+    .top-menu .fa-search {
+        color: #3cb4e7 !important;
+        font-size: 1rem; /* Büyüklük hafif artırıldı */
+    }
+
+   
+
+
+body.scrolled .top-menu {
+    background-color: white !important;
+    color: black;
+}
+
+/* NAVBAR MENÜ */
+.navbar .nav-link {
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    color: #222;
+    font-weight: 500;
+}
+
+    .navbar .nav-link:hover {
+        color: #3cb4e7;
+    }
+
+/* NAVBAR'ın Top Menüye Yaklaştırılması ve Daha İnce Görünmesi */
+.navbar {
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+    margin-top: -12px; /* top-menu ile boşluk sabitlendi */
+    margin-bottom: 0 !important; /* altına ekstra boşluk gelmesin */
+}
+
+/* Logonun Boyutu Küçültülsün */
+.navbar-brand img {
+    height: 90px !important;
+    margin-top: -23px; /* yukarı taşır */
+}
+
+/* SLIDER YAPIŞIK OLSUN */
+#mainSlider {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}

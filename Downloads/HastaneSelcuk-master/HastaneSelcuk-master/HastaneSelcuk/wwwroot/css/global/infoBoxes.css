@@ -1,0 +1,238 @@
+/* infoBoxes.css */
+
+/* Root Variables */
+:root {
+    --main-blue: #3cb4e7;
+    --text-dark: #4c4c4c;
+    --text-light: #f3f6fa;
+    --divider-light: #e0e0e0;
+}
+
+
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .info-box .title {
+        font-size: 1.5rem;
+    }
+
+    .info-box .description {
+        font-size: 1rem;
+    }
+
+    .info-box .schedule-row span {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-box .title {
+        font-size: 1.3rem;
+    }
+
+    .info-box .description {
+        font-size: 0.95rem;
+    }
+
+    .info-box .schedule-row span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 577px) {
+    .info-container .row {
+        flex-direction: column !important;
+    }
+    .info-container .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 1.5rem;
+    }
+    .info-box {
+        padding: 1.2rem 0.7rem;
+    }
+    .info-box .title {
+        font-size: 1.15rem;
+        word-break: break-word;
+    }
+    .info-box .description {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+    .info-box .schedule, .info-box .schedule-row {
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .info-box .schedule-row span {
+        font-size: 0.85rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 993px) {
+    .info-container .row {
+        flex-direction: row !important;
+    }
+    .info-container .col-md-4 {
+        max-width: 33.3333%;
+        flex: 0 0 33.3333%;
+        margin-bottom: 0;
+    }
+    .info-box {
+        padding: 1.5rem 0.7rem;
+    }
+    .info-box .title {
+        font-size: 1.25rem;
+        word-break: break-word;
+    }
+    .info-box .description {
+        font-size: 0.98rem;
+        word-break: break-word;
+    }
+    .info-box .schedule, .info-box .schedule-row {
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .info-box .schedule-row span {
+        font-size: 0.9rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .info-container .row {
+        flex-direction: column !important;
+    }
+    .info-container .col-md-4 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 1.2rem;
+    }
+    .info-box {
+        padding: 1.1rem 0.5rem;
+    }
+    .info-box .title {
+        font-size: 1.05rem;
+        word-break: break-word;
+    }
+    .info-box .description {
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+    .info-box .schedule, .info-box .schedule-row {
+        max-width: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .info-box .schedule-row span {
+        font-size: 0.8rem;
+        white-space: normal;
+    }
+    .info-box .icon {
+        font-size: 2.2rem;
+    }
+}
+
+/* Custom classes for inline styles from _InfoBoxes.cshtml */
+
+.info-box-bg-blue {
+    background: #3cb4e7;
+    color: #fff;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    width: 100%;
+    padding: 2.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-box-bg-white {
+    background: #fff;
+    color: #4c4c4c;
+    border-left: 2px solid #f3f6fa;
+    border-right: 2px solid #f3f6fa;
+    width: 100%;
+    padding: 2.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-box-bg-blue-right {
+    background: #3cb4e7;
+    color: #fff;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    width: 100%;
+    padding: 2.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-box-icon {
+    font-size: 3.2rem;
+    margin-bottom: 1.2rem;
+}
+.info-box-title {
+    font-size: 1.7rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+}
+.info-box-desc {
+    font-size: 1.08rem;
+    margin-bottom: 1.2rem;
+    color: #f3f6fa;
+    text-align: center;
+    line-height: 1.5;
+}
+.info-box-desc-dark {
+    color: #888;
+}
+.info-box-schedule {
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.info-box-schedule-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-box-divider-white {
+    border-bottom: 1px solid #fff;
+}
+.info-box-divider-light {
+    border-bottom: 1px solid #e0e0e0;
+}
+.info-box-spacer {
+    height: 1.2rem;
+}
+.info-box-label-dark {
+    color: #4c4c4c;
+    font-weight: 600;
+    flex: 1;
+    white-space: nowrap;
+    font-size: 0.98rem;
+}
+.info-box-label-center {
+    font-size: small;
+    font-weight: 600;
+    flex: 1;
+    text-align: center;
+}
+.info-box-label-right {
+    color: #4c4c4c;
+    font-weight: 600;
+    flex: 1;
+    text-align: right;
+}
+.info-box-label-blue {
+    color: #3cb4e7;
+    font-weight: 700;
+}

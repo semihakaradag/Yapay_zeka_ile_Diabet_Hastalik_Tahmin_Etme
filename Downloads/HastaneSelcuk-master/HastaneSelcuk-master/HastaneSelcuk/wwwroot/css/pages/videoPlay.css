@@ -1,0 +1,97 @@
+﻿.video-tab-card {
+    border-radius: 0 !important;
+    box-shadow: 0 2px 12px rgba(20,183,214,0.08);
+    transition: box-shadow 0.18s, transform 0.18s;
+    font-size: 1.1rem;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.video-tab-card:hover {
+    box-shadow: 0 6px 24px rgba(20,183,214,0.18);
+    transform: translateY(-4px) scale(1.03);
+    background: #f3fbfd;
+}
+
+@media (max-width: 768px) {
+     .video-tab-card {
+         border-radius: 0 !important;
+         font-size: 1rem;
+         min-height: 70px;
+         padding: 1.2rem 0.5rem;
+     }
+ }
+
+.video-tab-card-custom {
+    border-radius: 1.2rem !important;
+    box-shadow: 0 2px 16px rgba(20,183,214,0.13);
+    transition: box-shadow 0.18s, transform 0.18s;
+    font-size: 1.1rem;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.video-tab-card-custom:hover {
+    box-shadow: 0 8px 32px rgba(20,183,214,0.18);
+    transform: translateY(-6px) scale(1.04);
+    background: #f3fbfd;
+}
+
+.video-tab-bar {
+    height: 16px;
+    background: var(--main-blue);
+    border-radius: 1.2rem 1.2rem 0 0;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+     .video-tab-card-custom {
+         font-size: 1rem;
+         min-height: 80px;
+         padding: 1.2rem 0.5rem;
+     }
+
+     .video-tab-bar {
+         height: 12px;
+         border-radius: 1rem 1rem 0 0;
+     }
+ }
+
+.video-solution-container {
+    background: var(--main-blue);
+    min-height: 420px;
+}
+
+.video-solution-ratio {
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+}
+
+.video-play-button {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+:root {
+    --main-blue: #3cb4e7;
+}
+
+.bg-main-blue {
+    background-color: var(--main-blue) !important;
+}
+
+.text-main-blue {
+    color: var(--main-blue) !important;
+}

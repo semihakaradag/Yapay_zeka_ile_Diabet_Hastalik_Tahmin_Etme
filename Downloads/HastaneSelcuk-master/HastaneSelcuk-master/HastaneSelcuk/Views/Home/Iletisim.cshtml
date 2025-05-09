@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hastane Web Sayfası</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="@Url.Content("~/css/pages/sayfa.css")">
+</head>
+<body>
+
+
+    <div class="slider-box">
+        <img src="@Url.Content("~/images/semslider/iletisimslider.png")" alt="Hızlı Erişim Banner">
+    </div>
+    <section class="iletisim-bilgileri">
+        <div class="iletisim-grid">
+            <div class="iletisim-kutu">
+                <img src="@Url.Content("~/images/semicon/adres.png")" class="iletisim-icon" alt="Adres">
+                <div>
+                    <h3>Adres</h3>
+                    <p>
+                        Akademi Mah. Yeni İstanbul Cad. No:313<br>
+                        Selçuk Üni. Alaeddin Keykubat Yerleşkesi<br>
+                        Selçuklu/Konya 42130
+                    </p>
+                </div>
+            </div>
+            <div class="iletisim-kutu">
+                <img src="@Url.Content("~/images/semicon/telefon.png")" class="iletisim-icon" alt="Telefon">
+                <div>
+                    <h3>Telefon</h3>
+                    <p>Hastane Santral: +90 (332) 241 50 00</p>
+                </div>
+            </div>
+            <div class="iletisim-kutu">
+                <img src="@Url.Content("~/images/semicon/hastane.png")" class="iletisim-icon" alt="Ulaşım">
+                <div>
+                    <h3>Hastaneye Nasıl Ulaşırım?</h3>
+                    <p>
+                        1.Alternatif: Tramvay Hattını kullanabilirsiniz. Konya’nın her noktasından binebileceğiniz Tramvay ile “Kampüs” ve “Tıp Fakültesi” durağına kadar gelip, buradan hastanemize kısa sürede ulaşabilirsiniz.<br><br>
+                        2.Alternatif: Eski Garaj, Otogar, Kampüs Hatlı dolmuşlarla Kampüse gelerek hastanemize ulaşabilirsiniz.
+                    </p>
+                </div>
+            </div>
+            <div class="iletisim-kutu">
+                <img src="@Url.Content("~/images/semicon/eposta.png")" class="iletisim-icon" alt="Mail">
+                <div>
+                    <h3>Elektronik Posta</h3>
+                    <p><a href="mailto:hastaneiletisim@selcuk.edu.tr">hastaneiletisim@selcuk.edu.tr</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="iletisim-formu">
+        <h2>İletişim Formu</h2>
+        <p class="aciklama">İstek, Talep ve Şikayetinizi form aracılığıyla bize iletebilirsiniz.</p>
+        <p class="vurgulu">Randevu talepleriniz için ``Online Randevu`` sistemini kullanabilirsiniz.</p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>ADINIZ</label>
+                    <input type="text" name="ad" required>
+                </div>
+                <div class="form-group">
+                    <label>SOYADINIZ</label>
+                    <input type="text" name="soyad" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>TELEFON NUMARASI</label>
+                    <input type="tel" name="telefon">
+                </div>
+                <div class="form-group">
+                    <label>E-POSTA</label>
+                    <input type="email" name="eposta">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>MESAJINIZI YAZIN...</label>
+                <textarea name="mesaj" rows="5"></textarea>
+            </div>
+            <div class="form-submit">
+                <button type="submit">GÖNDER</button>
+            </div>
+        </form>
+    </section>
+    <div class="harita-kapsayici">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.561125968351!2d32.501066715648946!3d37.8703230146967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d088cbbe19c3e7%3A0xe4a4bc9799cd3c38!2sSelçuk%20Üniversitesi%20Tıp%20Fakültesi%20Hastanesi!5e0!3m2!1str!2str!4v1714642176103!5m2!1str!2str"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

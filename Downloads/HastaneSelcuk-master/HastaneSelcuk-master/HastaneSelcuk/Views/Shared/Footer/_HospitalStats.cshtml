@@ -1,0 +1,62 @@
+@{
+   
+}
+
+<!-- Footer 2: Rakamlarla Hastanemiz -->
+<div class="container">
+    <div class="footer-numbers" style="background: url('@Url.Content("~/images/footer2_bg.jpeg")') center center/cover no-repeat; color: #fff; padding: 1rem 7vw 2.5rem 7vw;">
+        <div class="container-fluid px-0">
+            <div class="row text-center mb-3 justify-content-center">
+                <div class="col-12">
+                    <div style="font-size:1.1rem; font-weight:600; letter-spacing:0.01em; margin-bottom:1rem;">Rakamlarla Hastanemiz</div>
+                </div>
+            </div>
+            <div class="row text-center justify-content-center align-items-end gx-2" id="footerStats" style="gap:0.5vw;">
+                <div class="col-auto px-4 mb-3 mb-md-0">
+                    <div class="display-5 fw-semibold counter" data-target="198">0</div>
+                    <div style="font-size:1.08rem;">öğretim üyesi</div>
+                </div>
+                <div class="col-auto px-4 mb-3 mb-md-0">
+                    <div class="display-5 fw-semibold counter" data-target="172">0</div>
+                    <div style="font-size:1.08rem;">uzman doktor</div>
+                </div>
+                <div class="col-auto px-4 mb-3 mb-md-0">
+                    <div class="display-5 fw-semibold counter" data-target="700">0</div>
+                    <div style="font-size:1.08rem;">sağlık personeli</div>
+                </div>
+                <div class="col-auto px-4 mb-3 mb-md-0">
+                    <div class="display-5 fw-semibold counter" data-target="35">0</div>
+                    <div style="font-size:1.08rem;">laboratuvar</div>
+                </div>
+                <div class="col-auto px-4 mb-3 mb-md-0">
+                    <div class="display-5 fw-semibold counter" data-target="17">0</div>
+                    <div style="font-size:1.08rem;">ameliyathane</div>
+                </div>
+                <div class="col-auto px-4 mb-3 mb-md-0">
+                    <div class="display-5 fw-semibold counter" data-target="434">0</div>
+                    <div style="font-size:1.08rem;">yatak kapasitesi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Sayaç animasyonu
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const current = +counter.innerText.replace(/\D/g, '');
+        const increment = Math.ceil(target / 60);
+        if(current < target) {
+          counter.innerText = current + increment > target ? target : current + increment;
+          setTimeout(updateCounter, 18);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+</script> 

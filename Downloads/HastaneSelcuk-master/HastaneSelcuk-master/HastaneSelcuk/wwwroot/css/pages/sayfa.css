@@ -1,0 +1,333 @@
+/* ===================== */
+/* GENEL GÖRSEL YAPI     */
+/* ===================== */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+}
+  
+  /* ===================== */
+  /* SLIDER GÖRSEL ALANI  */
+  /* ===================== */
+  
+  .slider-box {
+    max-width: 1200px;
+    margin: 0px auto 0 auto; /* header boşluğu kadar */
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
+  
+  .slider-box img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* ===================== */
+  /* ANA PANEL KUTUSU     */
+  /* ===================== */
+  
+  .content-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Slider'dan sonra gelen content-box üst boşluk bırakmasın */
+  .content-box:not(.slider-box) {
+    margin-top: 0;
+  }
+  
+  /* ===================== */
+  /* KUTU GRİD DİZİLİMİ   */
+  /* ===================== */
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* ===================== */
+  /* KUTU STİLİ           */
+  /* ===================== */
+  
+  .grid-container div {
+    width: 480px;
+    height: 72px;
+    background-color: white;
+    border: 2px solid #1EB9D1;
+    color: #13737E;
+    font-weight: 540;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease ,  box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .grid-container div:hover {
+    background-color: #f0fdff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  /* ===================== */
+  /* RESPONSIVE TASARIM   */
+  /* ===================== */
+  
+  @media (max-width: 1200px) {
+    .grid-container div {
+      width: 90%;
+    }
+  }
+
+  .grid-container .left-alone {
+    width: 480px;
+    margin-left: 80px;
+    margin-right: auto;
+  }
+  
+  
+  /* ===================== */
+/* DOKTORLARIMIZ ÜST BUTONLAR */
+/* ===================== */
+
+.doctor-button-group {
+    display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  }
+  
+  .doctor-button {
+    width: 305px;
+    height: 86px;
+    background: linear-gradient(to right, #20c6d9, #1a98ce);
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .doctor-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #1a98ce, #20c6d9);
+  }
+
+  .iletisim-panel {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  .iletisim-bilgileri {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    max-width: 1200px; /* slider ile aynı genişlik */
+    margin: 0 auto;     /* ortaya hizalama */
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+  }
+  
+  .iletisim-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .iletisim-kutu {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+   
+  }
+  
+  .iletisim-icon {
+    width: 150px;
+    height: 150px;
+    margin-top: -30px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .iletisim-kutu h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .iletisim-kutu p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .iletisim-kutu a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  
+  .bilgi-satiri {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .bilgi-kutusu {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1 1 45%;
+  }
+  
+  .bilgi-kutusu .ikon {
+    min-width: 90px;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bilgi-kutusu .ikon img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bilgi-yazi h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .bilgi-yazi p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .bilgi-yazi a {
+    color: #1e4dd8;
+    text-decoration: none;
+  }
+  
+  .bilgi-yazi a:hover {
+    text-decoration: underline;
+  }
+  
+  .iletisim-formu {
+    background-color: #fff;
+    padding: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #f5f5f5;           
+    box-shadow: 0 4px 8px rgba(0,0,0,0.03); 
+    border-radius: 8px;  
+  }
+  
+  .iletisim-formu h2 {
+    font-size: 36px;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .iletisim-formu .aciklama {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .iletisim-formu .vurgulu {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .form-submit {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .form-submit button {
+    background-color: #2c4e9a;
+    color: white;
+    padding: 12px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-submit button:hover {
+    background-color: #1d3b75;
+  }
+
+  .harita-kapsayici {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 100px; 
+  }
+  
+  

@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Selçuk Üniversitesi Tıp Fakültesi Hastanesi</title>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="~/css/pages/index.css" />
+</head>
+<body>
+
+
+	<!-- Slider (Carousel) -->
+	<!-- Todo slider boyut sıkıntılı  -->
+	<div id="mainSlider" class="carousel carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active rounded-circle"></button>
+			<button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" class="rounded-circle"></button>
+			<button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" class="rounded-circle"></button>
+			<button type="button" data-bs-target="#mainSlider" data-bs-slide-to="3" class="rounded-circle"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div style="aspect-ratio: 16/9; width: 100%; background: #000;">
+					<video class="d-block w-100 h-100" style="object-fit:contain;" src="~/video/sliderVideo4.mp4" autoplay muted loop playsinline></video>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div style="aspect-ratio: 16/9; width: 100%; background: #000;">
+					<video class="d-block w-100 h-100" style="object-fit:contain;" src="~/video/sliderVideo2.mp4" autoplay muted loop playsinline></video>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div style="aspect-ratio: 16/9; width: 100%; background: #000;">
+					<video class="d-block w-100 h-100" style="object-fit:contain;" src="~/video/sliderVideo1.mp4" autoplay muted loop playsinline></video>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div style="aspect-ratio: 16/9; width: 100%; background: #000;">
+					<video class="d-block w-100 h-100" style="object-fit:contain;" src="~/video/sliderVideo3.mp4" autoplay muted loop playsinline></video>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-4"></span>
+			<span class="visually-hidden">Önceki</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+			<span class="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-4"></span>
+			<span class="visually-hidden">Sonraki</span>
+		</button>
+	</div>
+
+	<div class="d-flex flex-column justify-content-center align-items-center w-100 text-center">
+		<div class="container-xxl px-3 px-lg-4" style="background: white;">
+			<!-- 4'lü Kartlar (Slider Altı) -->
+			<div class="container mb-5"> 
+				<div class="row g-2">
+					<div class="col-6 col-md-3">
+						<div class="card text-center square-btn card-quicklink bg-main-blue p-2"> 
+							<i class="fa-solid fa-calendar-check quicklink-icon mb-1"></i>
+							<div class="fw-bold text-white" style="font-size: 1.2rem;">Online Randevu</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="card text-center square-btn card-quicklink bg-main-blue p-2">
+							<i class="fa-solid fa-calendar-xmark quicklink-icon mb-1"></i>
+							<div class="fw-bold text-white" style="font-size: 1.2rem;">Randevu İptal</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="card text-center square-btn card-quicklink bg-main-blue p-2">
+							<i class="fa-solid fa-vial quicklink-icon mb-1" ></i>
+							<div class="fw-bold text-white" style="font-size: 1.2rem;">Tahlil Sonuçları</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="card text-center square-btn card-quicklink bg-main-blue p-2">
+							<i class="fa-solid fa-phone quicklink-icon mb-1"></i>
+							<div class="fw-bold text-white" style="font-size: 1.2rem;">Telefon Rehberi</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Duyurular ve Haberler -->
+			<div class="container mb-4">
+				<div class="card p-4" style="background: #fafbfc; border: none; box-shadow: none;">
+					<div class="row g-0 align-items-stretch" style="height:100%;">
+						<!-- Duyurular -->
+						<div class="col-md-6 pe-md-4 border-end d-flex flex-column h-100">
+							<div class="d-flex justify-content-between align-items-center mb-3">
+								<div class="fw-semibold" style="color: #3cb4e7; font-size:1.3rem;">DUYURULAR</div>
+								<a href="#" class="fw-medium text-decoration-none border-end pe-3 ms-3" style="color: #3cb4e7;">Tüm Duyurular</a>
+							</div>
+							<ul class="list-unstyled">
+								<li class="d-flex align-items-stretch bg-white rounded mb-3 overflow-hidden shadow-sm" style="min-height:64px;">
+									<div class="d-flex flex-column align-items-center justify-content-center fw-bold px-2 py-2 text-white" style="background-color: #3d4752; min-width:80px; max-width:80px;">
+										<span class="fw-semibold" style="font-size:1rem;">25 HAZ</span>
+										<span class="fw-normal">2024</span>
+									</div>
+									<div style="width:5px; background:#3cb4e7; border-radius:0 4px 4px 0;"></div>
+									<div class="fw-medium d-flex align-items-center px-3 flex-grow-1" style="color: #3d4752; font-size:1.1rem;">Senin De Desteğinle Daha İyi Bir Hastane!</div>
+								</li>
+								<li class="d-flex align-items-stretch bg-white rounded mb-3 overflow-hidden shadow-sm" style="min-height:64px;">
+									<div class="d-flex flex-column align-items-center justify-content-center fw-bold px-2 py-2 text-white" style="background-color: #3d4752; min-width:80px; max-width:80px;">
+										<span class="fw-semibold" style="font-size:1rem;">2 TEM</span>
+										<span class="fw-normal">2024</span>
+									</div>
+									<div style="width:5px; background:#3cb4e7; border-radius:0 4px 4px 0;"></div>
+									<div class="fw-medium d-flex align-items-center px-3 flex-grow-1" style="color: #3d4752; font-size:1.1rem;">Değişen İş Kurallarımız Hakkında Bilgilendirme</div>
+								</li>
+								<li class="d-flex align-items-stretch bg-white rounded mb-3 overflow-hidden shadow-sm" style="min-height:64px;">
+									<div class="d-flex flex-column align-items-center justify-content-center fw-bold px-2 py-2 text-white" style="background-color: #3d4752; min-width:80px; max-width:80px;">
+										<span class="fw-semibold" style="font-size:1rem;">1 EKİ</span>
+										<span class="fw-normal">2024</span>
+									</div>
+									<div style="width:5px; background:#3cb4e7; border-radius:0 4px 4px 0;"></div>
+									<div class="fw-medium d-flex align-items-center px-3 flex-grow-1" style="color: #3d4752; font-size:1.1rem;">EKİM AYI PERSONEL ÖĞLE YEMEĞİ LİSTESİ</div>
+								</li>
+								<li class="d-flex align-items-stretch bg-white rounded mb-3 overflow-hidden shadow-sm" style="min-height:64px;">
+									<div class="d-flex flex-column align-items-center justify-content-center fw-bold px-2 py-2 text-white" style="background-color: #3d4752; min-width:80px; max-width:80px;">
+										<span class="fw-semibold" style="font-size:1rem;">16 NİS</span>
+										<span class="fw-normal">2023</span>
+									</div>
+									<div style="width:5px; background:#3cb4e7; border-radius:0 4px 4px 0;"></div>
+									<div class="fw-medium d-flex align-items-center px-3 flex-grow-1" style="color: #3d4752; font-size:1.1rem;">Hastanemiz Sosyal Medya Hesapları</div>
+								</li>
+								<li class="d-flex align-items-stretch bg-white rounded mb-3 overflow-hidden shadow-sm" style="min-height:64px;">
+									<div class="d-flex flex-column align-items-center justify-content-center fw-bold px-2 py-2 text-white" style="background-color: #3d4752; min-width:80px; max-width:80px;">
+										<span class="fw-semibold" style="font-size:1rem;">6 ARA</span>
+										<span class="fw-normal">2023</span>
+									</div>
+									<div style="width:5px; background:#3cb4e7; border-radius:0 4px 4px 0;"></div>
+									<div class="fw-medium d-flex align-items-center px-3 flex-grow-1" style="color: #3d4752; font-size:1.1rem;">Hastanemiz Sosyal Medya Hesapları</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Haberler  -->
+						<!-- todo card yapısı duyurular ile tam hizalı değil -->
+						<div class="col-md-6 ps-md-4 d-flex flex-column h-200">
+							<div class="d-flex justify-content-between align-items-center mb-3">
+								<div class="fw-semibold" style="color: #3cb4e7; font-size:1.3rem;">HABERLER</div>
+								<div class="d-flex align-items-center">
+									<a href="#" class="fw-medium text-decoration-none border-end pe-3 ms-3" style="color: #3cb4e7;">Tüm Haberler</a>
+									<button class="news-nav-btn ms-2 me-1" id="newsPrev"><i class="fas fa-chevron-left"></i></button>
+									<button class="news-nav-btn" id="newsNext"><i class="fas fa-chevron-right"></i></button>
+								</div>
+							</div>
+							<div class="news-slider d-flex flex-row gap-4 flex-grow-1 h-100 align-items-stretch" id="newsSlider">
+								<div class="bg-white rounded-4 shadow-sm d-flex flex-column flex-grow-1 overflow-hidden pb-2 h-100" style="max-width:100%;">
+									<img src="~/images/haber_1.png" class="w-100" style="height:140px; object-fit:cover; border-radius:1rem 1rem 0 0;">
+									<div class="fw-semibold" style="color:#3cb4e7; font-size:1rem; margin:0.7rem 0 0.3rem 1.2rem;">03 Ekim 2024</div>
+									<div class="fw-medium" style="color:#3d4752; font-size:small; margin:0 1.2rem 0.7rem 1.2rem;">EMZİRME DANIŞMANLIĞI EĞİTİMLERİ TAMAMLANDI</div>
+								</div>
+								<div class="bg-white rounded-4 shadow-sm d-flex flex-column flex-grow-1 overflow-hidden pb-2 h-100" style="max-width:100%;">
+									<img src="~/images/haber_2.png" class="w-100" style="height:140px; object-fit:cover; border-radius:1rem 1rem 0 0;">
+									<div class="fw-semibold" style="color:#3cb4e7; font-size:1rem; margin:0.7rem 0 0.3rem 1.2rem;">05 Ekim 2024</div>
+									<div class="fw-medium" style="color:#3d4752; font-size:small; margin:0 1.2rem 0.7rem 1.2rem;">HAP (HASTANE AFET PLANI) TATBİKATI GERÇEKLEŞTİ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Muayene Süreci -->
+			<div class="container mb-4" style="padding-bottom:2.5rem;">
+				<div class="rounded-4 p-0 overflow-hidden position-relative" style="background: rgb(60, 180, 231); min-height: 420px;">
+					<div class="muayene-sureci-border position-absolute top-0 bottom-0 start-0" style="width: 18px; z-index: 2;"><div style="height:100%;width:4px;background:#fff;opacity:0.7;border-radius:2px;"></div></div>
+					<div class="muayene-sureci-border position-absolute top-0 bottom-0 end-0" style="width: 18px; z-index: 2;"><div style="height:100%;width:4px;background:#fff;opacity:0.7;border-radius:2px;"></div></div>
+					<div class="container position-relative" style="z-index:3;">
+						<div class="text-center mb-5" style="padding-top: 32px;">
+							<div class="d-flex align-items-center justify-content-center" style="gap: 24px;">
+								<div style="flex:1; height:3px; border-bottom:2px dotted #fff; opacity:0.6; max-width:320px;"></div>
+								<h2 class="text-white fw-bold text-uppercase m-0" style="font-size:2.6rem; letter-spacing:0.02em;">Muayene Süreci</h2>
+								<div style="flex:1; height:3px; border-bottom:2px dotted #fff; opacity:0.6; max-width:320px;"></div>
+							</div>
+						</div>
+						<div class="row justify-content-center align-items-stretch g-0 muayene-row-custom">
+							<!-- 1. Aşama  -->
+							<div class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center px-4 muayene-step-card-custom" style="padding-left: 32px; padding-bottom:2rem;">
+								<div class="muayene-step-circle mb-2"><span>1</span></div>
+								<div class="muayene-step-label">AŞAMA</div>
+								<div class="muayene-step-title">RANDEVU ALIMI</div>
+								<div class="muayene-step-icon mb-2" style="font-size:3.2rem;"><i class="fa-regular fa-calendar-days"></i></div>
+								<div class="muayene-step-desc">HASTA ONLINE OLARAK YADA DİĞER RANDEVU ALMA METOTLARI İLE İLGİLİ POLİKLİNİKTEN RANDEVU OLUŞTURMALIDIR.<br><br><b>RANDEVUYA GELEMEYECEK HASTALARIN MUTLAKA 1 GÜN ÖNCE RANDEVUSUNU İPTAL ETMELİDİR.</b></div>
+							</div>
+							<!-- 2. Aşama  -->
+							<div class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center px-2 muayene-step-card-custom">
+								<div class="muayene-step-circle mb-2"><span>2</span></div>
+								<div class="muayene-step-label">AŞAMA</div>
+								<div class="muayene-step-title">HASTA KAYIT</div>
+								<div class="muayene-step-icon mb-2" style="font-size:3.2rem;"><i class="fa-regular fa-id-card"></i></div>
+								<div class="muayene-step-desc">RANDEVU SAATİNDEN 30 DK ÖNCE HASTA NÜFUS KİMLİK Aşama I, EHLİYET YADA PASAPORT İLE MUAYENE KAYIT İŞLEMİNİ İLGİLİ POLİKLİNİKTEN YAPMALIDIR.<br><br><b>KAYIT İŞLEMİ YAPMAYAN HASTALAR MUAYENE OLAMAZLAR.</b></div>
+							</div>
+							<!-- 3. Aşama  -->
+							<div class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center px-2 muayene-step-card-custom">
+								<div class="muayene-step-circle mb-2"><span>3</span></div>
+								<div class="muayene-step-label">AŞAMA</div>
+								<div class="muayene-step-title">MUAYENE</div>
+								<div class="muayene-step-icon mb-2" style="font-size:3.2rem;"><i class="fa-solid fa-stethoscope"></i></div>
+								<div class="muayene-step-desc">SIRASI GELEN HASTA UZMAN HEKİM TARAFINDAN TİTİZLİK İLE MUAYENE EDİLİR<br><br><b>MUAYENE SONUNDA TEŞHİS KONULAN HASTAYA TEDAVİYE BAŞLANIR HEKİM HASTANIN DURUMUNA GÖRE GEREKLİ TAHLİLLERİ İSTEYEBİLİR</b></div>
+							</div>
+							<!-- 4. Aşama  -->
+							<div class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center px-2 muayene-step-card-custom">
+								<div class="muayene-step-circle mb-2"><span>4</span></div>
+								<div class="muayene-step-label">AŞAMA</div>
+								<div class="muayene-step-title">TAHLİL SÜRECİ</div>
+								<div class="muayene-step-icon mb-2" style="font-size:3.2rem;"><i class="fa-solid fa-flask-vial"></i></div>
+								<div class="muayene-step-desc">TAHLİL TÜRÜNE GÖRE İLGİLİ TAHLİL BİRİMİNE BAŞVURULUR TAHLİL SONUÇLARI ONLINE OLARAK TAKİP EDİLEBİLİR <br><br><b>TAHLİL SONUÇLARI, TAHLİL TALEBİ EDEN HEKİMİN SİSTEMİNDE SONUÇLARIN ÇIKMASININ ARDINDAN GÖRÜNMEKTEDİR.</b></div>
+							</div>
+							<!-- 5. Aşama  -->
+							<div class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center px-2 muayene-step-card-custom">
+								<div class="muayene-step-circle mb-2"><span>5</span></div>
+								<div class="muayene-step-label">AŞAMA</div>
+								<div class="muayene-step-title">TAHLİL SONUÇ</div>
+								<div class="muayene-step-icon mb-2" style="font-size:3.2rem;"><i class="fa-solid fa-ruler-vertical"></i></div>
+								<div class="muayene-step-desc">TAHLİL SONUÇLARININ ÇIKMASININ ARDINDAN MUAYENE OLUNAN POLİKLİNİĞE TEKRAR BAŞVURULUP TAHLİL SONUÇ DEĞERLENDİRME İŞLEMLERİ BAŞLATILIR.<br><br><b>TEKRAR RANDEVU ALIMI POLİKLİNİKLERE GÖRE DEĞERLENDİRİLİR</b></div>
+							</div>
+							<!-- 6. Aşama  -->
+							<div class="col-12 col-sm-6 col-lg-2 d-flex flex-column align-items-center px-4 muayene-step-card-custom" style="padding-right: 32px;">
+								<div class="muayene-step-circle mb-2"><span>6</span></div>
+								<div class="muayene-step-label">AŞAMA</div>
+								<div class="muayene-step-title" style="font-size:1.05rem; letter-spacing:0.01em; white-space:nowrap;">MUAYENE SONUÇ</div>
+								<div class="muayene-step-icon mb-2" style="font-size:3.2rem;">
+									<i class="fa-solid fa-heart-pulse"></i>
+								</div>
+								<div class="muayene-step-desc">TÜM SÜREÇLERİN SONLANMASININ ARDINDAN UZMAN HEKİM HASTANIN TEDAVİSİNE HASTANE DIŞINDA AYAKTA DEVAMINA YADA HASTANEDE YATARAK TEDAVİSİNE VEYA CERRAHİ İŞLEM SÜRECİNİN BAŞLAMASINA KARAR VERİR.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Video Çözüm Merkezi -->
+			@await Html.PartialAsync("_VideoSolutionCenter")
+
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+			// slider da video varsa otomatik geçiş süresi 10 sn
+		document.addEventListener('DOMContentLoaded', function() {
+			var slider = document.getElementById('mainSlider');
+			if (slider) {
+				slider.setAttribute('data-bs-interval', '10000');
+				var items = slider.querySelectorAll('.carousel-item');
+				items.forEach(function(item) {
+					item.setAttribute('data-bs-interval', '10000');
+				});
+			}
+		});
+	</script>
+</body>
+</html> 

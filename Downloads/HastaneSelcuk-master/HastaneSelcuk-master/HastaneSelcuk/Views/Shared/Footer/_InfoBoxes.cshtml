@@ -1,0 +1,91 @@
+@{
+    var mainBlue = "#3cb4e7";
+}
+
+<!-- Footer 1: Bilgi Kutuları -->
+<div class="container mb-4">
+    <div class="row g-0 flex-xl-row flex-column">
+        <!-- 1. KUTU (Hasta Ziyaret Saatleri) -->
+        <div class="col-12 col-xl-4 d-flex align-items-stretch">
+            <div style="background:@mainBlue; color:#fff; border-top-left-radius:18px; border-bottom-left-radius:18px; width:100%; padding:2.8rem 1.5rem; display:flex; flex-direction:column; align-items:center;">
+                <div style="font-size:3.2rem; margin-bottom:1.2rem;"><i class="fa-solid fa-bed"></i></div>
+                <div class="fw-bold mb-3 text-uppercase" style="font-size:1.7rem; letter-spacing:0.01em; text-align:center;">HASTA ZİYARET SAATLERİ</div>
+                <div style="font-size:1.08rem; margin-bottom:1.2rem; color:#f3f6fa; text-align:center; line-height:1.5;">
+                    Hastalarımızın sağlığı açısından ziyaretlerin kısa tutulması oldukça önemlidir.
+                </div>
+                <div style="width:100%; max-width:340px; display: flex; flex-direction: column; gap: 0.4rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; white-space:nowrap; font-size:0.98rem;">Pazartesi–Cuma</span>
+                        <span style="font-size: small;   font-weight:600; flex:1; text-align:center;">Öğleden Önce</span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right;">12.00–13.00</span>
+                    </div>
+                    <div style="border-bottom:1px solid #fff;"></div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="flex:1;"></span>
+                        <span style=" font-weight:600; font-size: small;  flex:1; text-align:center;">Öğleden Sonra</span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right;">16.00–17.00</span>
+                    </div>
+                    <div style="border-bottom:1px solid #fff;"></div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; white-space:nowrap; font-size:0.98rem;">Cumartesi–Pazar</span>
+                        <span style="flex:1;"></span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right;">13.00–14.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. KUTU (Muayene Saatleri) -->
+        <div class="col-12 col-xl-4 d-flex align-items-stretch">
+            <div style="background:#fff; color:#4c4c4c; border-left:2px solid #f3f6fa; border-right:2px solid #f3f6fa; width:100%; padding:2.8rem 1.5rem; display:flex; flex-direction:column; align-items:center;">
+                <div style="font-size:3.2rem; margin-bottom:1.2rem; color:#4c4c4c;"><i class="fa-regular fa-clock"></i></div>
+                <div class="fw-bold mb-3 text-uppercase" style="font-size:1.7rem; letter-spacing:0.01em; text-align:center; color:#4c4c4c;">MUAYENE SAATLERİ</div>
+                <div style="color:#4c4c4c; font-size:1.08rem; margin-bottom:1.2rem; color:#888; text-align:center; line-height:1.5;">
+                    Polikliniklerimiz randevulu hastalarımıza aşağıdaki saatlerde hizmet vermektedir.
+                </div>
+                <div style="width:100%; max-width:340px; display: flex; flex-direction: column; gap: 0.4rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="font-weight:600; flex:1; white-space:nowrap; font-size:0.98rem;">Pazartesi–Cuma</span>
+                        <span style="color:@mainBlue; font-size: small;  font-weight:600; flex:1; text-align:center;">Öğleden Önce</span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right;">08.30–12.00</span>
+                    </div>
+                    <div style="border-bottom:1px solid #e0e0e0;"></div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="flex:1;"></span>
+                        <span style="color:@mainBlue;font-size: small; font-weight:600; flex:1; text-align:center;">Öğleden Sonra</span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right;">13.00–17.00</span>
+                    </div>
+                    <div style="border-bottom:1px solid #e0e0e0;"></div>
+                    <div style="display:flex; justify-content:center; align-items:center;">
+                        <span style="color:@mainBlue; font-weight:700;">Cumartesi–Pazar Hizmet Vermemekteyiz.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. KUTU (Öğretim Üyesi Muayene) -->
+        <div class="col-12 col-xl-4 d-flex align-items-stretch">
+            <div style="background:@mainBlue; color:#fff; border-top-right-radius:18px; border-bottom-right-radius:18px; width:100%; padding:2.8rem 1.5rem; display:flex; flex-direction:column; align-items:center;">
+                <div style="font-size:3.2rem; margin-bottom:1.2rem;"><i class="fa-solid fa-stethoscope"></i></div>
+                <div class="fw-bold mb-3 text-uppercase" style="font-size:1.7rem; letter-spacing:0.01em; text-align:center;">ÖĞRETİM ÜYESİ MUAYENE</div>
+                <div style="font-size:1.08rem; margin-bottom:1.2rem; color:#f3f6fa; text-align:center; line-height:1.5;">
+                    Öğretim üyelerimize aşağıdaki saatlerde ücretli olarak muayene olabilirsiniz.
+                </div>
+                <div style="width:100%; max-width:340px; display: flex; flex-direction: column; gap: 0.4rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; white-space:nowrap; font-size:0.98rem;">Pazartesi–Cuma</span>
+                        <span style="flex:1;"></span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right;">16.00–18.00</span>
+                    </div>
+                    <div style="border-bottom:1px solid #fff;"></div>
+                    <div style="height:1.2rem;"></div>
+                    <div style="border-bottom:1px solid #fff;"></div>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <span style="flex:1;"></span>
+                        <span style="color:#4c4c4c; font-weight:600; flex:1; text-align:right; white-space:nowrap; font-size:0.98rem;">Cumartesi–Pazar Muayene Yapılmamaktadır.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

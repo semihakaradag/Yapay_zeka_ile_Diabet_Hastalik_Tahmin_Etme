@@ -1,0 +1,463 @@
+.square-btn, .card.square-btn {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(60,180,231,0.08);
+    transition: box-shadow 0.2s;
+}
+
+    .square-btn:hover {
+        box-shadow: 0 4px 16px rgba(60,180,231,0.18);
+    }
+
+
+
+.card-step {
+    border: 2px solid var(--main-blue);
+    border-radius: 1rem;
+    min-height: 220px;
+}
+
+.card-info {
+    background: #eaf7fd;
+    border: none;
+}
+
+.footer-numbers {
+    background: var(--main-blue);
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer-main {
+    background: #222;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+}
+
+    .footer-main a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+
+/* Slider Stilleri */
+#mainSlider {
+    margin-bottom: 0;
+}
+
+    #mainSlider .carousel-item {
+        min-height: 250px;
+        max-height: 500px;
+        height: 40vw; /* Responsive: 40% of viewport width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #mainSlider .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+/* Responsive Ayarlar */
+@media (max-width: 1200px) {
+    #mainSlider .carousel-item {
+        max-height: 350px;
+        height: 32vw;
+    }
+}
+@media (max-width: 992px) {
+    #mainSlider .carousel-item {
+        max-height: 280px;
+        height: 38vw;
+    }
+}
+@media (max-width: 768px) {
+    #mainSlider .carousel-item {
+        min-height: 180px;
+        max-height: 220px;
+        height: 45vw;
+    }
+
+    .square-btn, .card.square-btn {
+        min-height: 100px;
+        font-size: 1rem;
+    }
+
+    .quicklink-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .quicklink-icon img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.card-quicklink {
+    background: var(--main-blue) !important;
+    color: #fff !important;
+    border-radius: 1rem;
+    box-shadow: 0 3px 18px rgba(60,180,231,0.10), 0 1px 4px rgba(0,0,0,0.04);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    padding: 1rem 0.6rem;
+    transition: box-shadow 0.2s, transform 0.2s, background 0.4s cubic-bezier(.4,2,.6,1), color 0.2s;
+    cursor: pointer;
+    background-size: unset;
+    background-position: unset;
+}
+
+    .card-quicklink:hover {
+        background: #166a99 !important;
+        box-shadow: 0 6px 24px rgba(26, 125, 179, 0.18), 0 1.5px 6px rgba(0, 0, 0, 0.08);
+        transform: translateY(-4px) scale(1.04);
+    }
+.quicklink-icon {
+    border-radius: 50%;
+    padding: 40px;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.08); /* opsiyonel: daire belirginleşir */
+    box-shadow: 0 4px 12px rgba(60, 180, 231, 0.2); /* gölgeyi belirginleştir */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s, background 0.2s, width 0.2s, height 0.2s, padding 0.2s;
+    font-size: 1.9rem;
+}
+
+
+.card-quicklink .fw-bold {
+    font-size: 0.85rem; 
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .quicklink-icon {
+        font-size: 1.3rem; 
+    }
+
+    .card-quicklink .fw-bold {
+        font-size: 0.75rem;
+    }
+
+    .card-quicklink {
+        min-height: 90px; 
+        padding: 0.8rem 0.5rem;
+    }
+}
+/* Modern Duyurular Listesi */
+
+.news-slider {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 100%;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(61,71,82,0.07);
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 0.7rem;
+}
+
+.news-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.news-title {
+    color: #222;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 1.2rem 0.7rem 1.2rem;
+}
+
+.news-date {
+    color: var(--main-blue);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.7rem 0 0.3rem 1.2rem;
+}
+
+/* home.html içindeki style etiketinden taşınanlar */
+.slider-img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .slider-img {
+        height: 250px;
+    }
+}
+
+.news-nav-btn {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(61,71,82,0.10);
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-blue);
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+    .news-nav-btn:hover {
+        background: var(--main-blue);
+        color: #fff;
+    }
+
+
+
+.muayene-step-circle {
+    width: 90px;
+    height: 90px;
+    background: #FFD600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    border: 4px solid #fff;
+    position: relative;
+}
+
+    .muayene-step-circle span {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: #222;
+        font-family: 'Arial Black', Arial, sans-serif;
+        line-height: 1;
+    }
+
+.muayene-step-label {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.04em;
+}
+
+.muayene-step-title {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.01em;
+}
+
+.muayene-step-icon {
+    font-size: 2.1rem;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.muayene-step-desc {
+    color: #fff;
+    font-size: 0.98rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+}
+
+    .muayene-step-desc b {
+        font-weight: 700;
+        color: #fff;
+        font-size: 1.01em;
+    }
+
+@media (max-width: 991px) {
+    .muayene-step-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+        .muayene-step-circle span {
+            font-size: 2.1rem;
+        }
+
+    .muayene-step-title {
+        font-size: 1rem;
+    }
+
+    .muayene-step-label {
+        font-size: 0.95rem;
+    }
+
+    .muayene-step-icon {
+        font-size: 1.5rem;
+    }
+
+    .muayene-step-desc {
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .muayene-step-circle {
+        width: 54px;
+        height: 54px;
+    }
+
+        .muayene-step-circle span {
+            font-size: 1.3rem;
+        }
+
+    .muayene-step-title {
+        font-size: 0.95rem;
+    }
+
+    .muayene-step-label {
+        font-size: 0.8rem;
+    }
+
+    .muayene-step-icon {
+        font-size: 1.1rem;
+    }
+
+    .muayene-step-desc {
+        font-size: 0.85rem;
+    }
+}
+
+.muayene-row-custom {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.muayene-step-card-custom {
+    position: relative;
+    background: transparent;
+    transition: box-shadow 0.2s, transform 0.2s;
+    z-index: 1;
+    min-height: 420px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    .muayene-step-card-custom:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 0;
+        height: 80%;
+        border-right: 2px dotted #fff;
+        opacity: 0.5;
+        z-index: 2;
+    }
+
+    .muayene-step-card-custom:last-child::after {
+        display: none !important;
+    }
+
+@media (max-width: 991px) {
+    .muayene-step-card-custom {
+        min-height: 340px;
+    }
+
+        .muayene-step-card-custom:not(:last-child)::after {
+            height: 70%;
+        }
+}
+
+@media (max-width: 767px) {
+    .muayene-step-card-custom {
+        min-height: 220px;
+        margin-bottom: 1.5rem;
+    }
+
+        .muayene-step-card-custom:not(:last-child)::after {
+            display: none;
+        }
+}
+
+/* Make slider full-width and add vertical margin */
+.slider-wrapper {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#mainSlider {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#mainSlider, #mainSlider .carousel-item {
+    aspect-ratio: 16 / 9;
+    height: auto !important;
+    min-height: unset;
+    max-height: unset;
+}
+
+/* Fallback for browsers that do not support aspect-ratio */
+@supports not (aspect-ratio: 16 / 9) {
+    #mainSlider, #mainSlider .carousel-item {
+        height: 0 !important;
+        padding-top: 56.25%; /* 9/16 = 0.5625 */
+        position: relative;
+    }
+    #mainSlider .carousel-item > img {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        object-fit: cover;
+    }
+}
+

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hastane Web Sayfası</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="@Url.Content("~/css/pages/sayfa.css")">
+</head>
+<body>
+    
+    <!-- Menü ve header yukarıda zaten var -->
+    <div class="slider-box">
+        <img src="@Url.Content("~/images/semslider/doktorlarımızslider.png")" alt="Hızlı Erişim Banner">
+    </div>
+
+    <!-- Doktorlar Üst 3 Buton -->
+    <div class="content-box">
+        <div class="doctor-button-group">
+            <button class="doctor-button">Cerrahi Tıp Birimleri</button>
+            <button class="doctor-button">Dahili Tıp Birimleri</button>
+            <button class="doctor-button">Temel Tıp Birimleri</button>
+        </div>
+
+        <!-- Kutu Dizilimi -->
+        <div class="grid-container">
+            <div>Anesteziyoloji ve Reanimasyon</div>
+            <div>Beyin ve Sinir Cerrahisi</div>
+            <div>Çocuk Cerrahisi</div>
+            <div>Genel Cerrahi</div>
+            <div>Göğüs Cerrahisi</div>
+            <div>Göz Hastalıkları</div>
+            <div>Kadın Hastalıkları ve Doğum</div>
+            <div>Kalp ve Damar Cerrahisi</div>
+            <div>Kulak Burun Boğaz Hastalıkları</div>
+            <div>Ortopedi ve Travmatoloji</div>
+            <div>Plastik, Rekonstrüktif ve Estetik Cerrahi</div>
+            <div>Tıbbi Patoloji</div>
+            <div class="left-alone">Üroloji</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
